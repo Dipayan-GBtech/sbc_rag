@@ -1,0 +1,282 @@
+[
+{
+  "plan": {
+    "calendar_year": true,
+    "deductible_reset_date": "2025-01-01",
+    "network_tiers": {
+      "in_network": {
+        "enhanced_coinsurance_benefit": 90,
+        "standard_coinsurance_benefit": 70
+      },
+      "out_of_network": {
+        "coinsurance_benefit": 60
+      }
+    },
+    "additional_notes": {
+      "referral_required": false,
+      "enhanced_network_explanation": "Enhanced network providers receive 90% benefit from the plan, while standard in-network providers receive 70%.",
+      "preventive_care_deductible_waiver": true,
+      "prescription_drugs_not_subject_to_deductible": true,
+      "preventive_care_copay": 0,
+      "wellness_exams_covered": true,
+      "prenatal_care_covered": true,
+      "postnatal_care_cost_share": true,
+      "radiology_excluded_from_women_preventive_coverage": true,
+      "delivery_facility_copay": 300,
+      "out_of_network_max": "unlimited"
+    }
+  },
+
+  "fully_covered_services": {
+    "preventive_care": {
+      "before_deductible": true,
+      "coverage_percentage": 100,
+      "services": [
+        "Abdominal Aortic Aneurysm Screening",
+        "Anemia Screening",
+        "Autism Screening",
+        "Breastfeeding Support",
+        "Chlamydia Screen",
+        "Depression Screening for Adolescents",
+        "Dietary Nutrition Counseling",
+        "Gonorrhea Screening",
+        "Hepatitis B Screening",
+        "HIV Screening",
+        "Rh Incompatibility Screening",
+        "Syphilis Screening",
+        "Genetic Counseling for BRCA Testing",
+        "Diabetes Screening",
+        "Rubella Screening",
+        "Mammography",
+        "Cervical Cancer Screening (Pap Smear)",
+        "Cholesterol Screening",
+        "Contraception (Women Only)",
+        "Colorectal Cancer Screening",
+        "Folic Acid Supplements",
+        "Gestational Diabetes Screening",
+        "Wellness Examinations",
+        "Immunizations",
+        "Newborn Screenings",
+        "Obesity Screening & Counseling",
+        "Osteoporosis Screening",
+        "Prostate Cancer Screening",
+        "Alcohol Misuse Counseling",
+        "Aspirin Use Counseling",
+        "Tobacco Use Screening",
+        "Female Sterilization",
+        "Routine Eye Exam",
+        "Maternity Care – Office Visit & Lab",
+        "Antenatal Screening",
+        "BRCA Gene Analysis (with qualifying diagnosis)"
+      ]
+    },
+    "prescription_drugs_not_subject_to_deductible": true,
+    "genetic_testing": {
+      "excluded": true
+    },
+    "emergency_care_outside_us": {
+      "covered": true
+    },
+    "private_duty_nursing": {
+      "covered": true
+    },
+    "wellness_benefits": {
+      "routine_eye_exam": true,
+      "routine_dental_checkup": true
+    }
+  },
+
+  "deductibles": {
+    "in_network": {
+      "individual": 1500,
+      "family": 4500
+    },
+    "out_of_network": {
+      "individual": 3000,
+      "family": 9000
+    },
+    "family_accumulation_rule": "any combination of covered members"
+  },
+
+  "copayments": {
+    "first_two_office_visits_annually": {
+      "value": 35,
+      "applies_to": ["in_network", "out_of_network"]
+    },
+    "outpatient_surgery_facility": {
+      "value": 100,
+      "applies_to": ["in_network", "out_of_network"]
+    },
+    "emergency_room_care": {
+      "value": 100,
+      "applies_to": ["in_network", "out_of_network"]
+    },
+    "hospital_stay": {
+      "in_network": 300,
+      "out_of_network": 500
+    },
+    "chiropractic_care": {
+      "daily_copay": 50,
+      "annual_limit_sessions": 30
+    }
+  },
+
+  "coinsurance": {
+    "in_network": {
+      "base_rate": 70,
+      "services": {
+        "primary_care_visit": 70,
+        "specialist_visit": 70,
+        "diagnostic_tests": 70,
+        "imaging": 70,
+        "outpatient_surgery_facility": 70,
+        "outpatient_surgery_physician": 70,
+        "emergency_room_care": 70,
+        "urgent_care": 70,
+        "hospital_stay_facility": 70,
+        "hospital_stay_physician": 70,
+        "mental_health_outpatient": 70,
+        "mental_health_inpatient": 70,
+        "maternity_services": 70,
+        "rehab_services": 70,
+        "durable_medical_equipment": 70,
+        "home_health": 70,
+        "hospice": 70
+      }
+    },
+    "out_of_network": {
+      "base_rate": 60,
+      "services": {
+        "preventive_care": 60,
+        "primary_care_visit": 60,
+        "specialist_visit": 60,
+        "diagnostic_tests": 60,
+        "imaging": 60,
+        "outpatient_surgery_facility": 60,
+        "outpatient_surgery_physician": 60,
+        "emergency_room_care": 60,
+        "urgent_care": 60,
+        "hospital_stay_facility": 60,
+        "hospital_stay_physician": 60,
+        "mental_health_outpatient": 60,
+        "mental_health_inpatient": 60,
+        "maternity_services": 60,
+        "rehab_services": 60,
+        "durable_medical_equipment": 60,
+        "home_health": 60,
+        "hospice": 60
+      }
+    }
+  },
+
+  "prescription_drug_coverage": {
+    "generic": {
+      "in_network": {
+        "type": "copay",
+        "value": 10
+      },
+      "out_of_network": "not covered"
+    },
+    "preferred_brand": {
+      "in_network": {
+        "type": "copay",
+        "value": "retail - $10"
+      },
+      "out_of_network": "not covered"
+    },
+    "non_preferred_brand": {
+      "in_network": {
+        "type": "copay",
+        "min_value": 10
+      },
+      "out_of_network": "not covered"
+    },
+    "specialty_drugs": {
+      "in_network": {
+        "type": "co-insurance",
+        "value": 30
+      },
+      "out_of_network": {
+        "type": "co-insurance",
+        "value": 60
+      }
+    }
+  },
+
+  "out_of_pocket_limits": {
+    "in_network": {
+      "individual": 9100,
+      "family": 18200
+    },
+    "out_of_network": {
+      "individual": "unlimited",
+      "family": "unlimited"
+    },
+    "excluded_from_oop": [
+      "premiums",
+      "balance-billed charges",
+      "ineligible charges",
+      "penalties"
+    ]
+  },
+
+  "dental_benefits": {
+    "maximum_annual_benefit_per_person_over_18": 1000,
+    "deductible": {
+      "individual": 50,
+      "family": 150
+    },
+    "preventive_care": {
+      "deductible_waived": true,
+      "coverage_percentage": 100
+    },
+    "basic_services_coverage": 80,
+    "major_services_coverage": 50,
+    "oral_exams_limit": 2,
+    "bitewing_xrays_limit": 2,
+    "sealants_limit": {
+      "age_under": 14,
+      "per_tooth_interval_years": 3
+    },
+    "fluoride_application": {
+      "adults": false,
+      "under_age_19": 1
+    },
+    "implants": "not covered",
+    "cosmetic_procedures": "not covered",
+    "alternate_benefit_provision": true,
+    "predetermination_of_benefits": true,
+    "dependents_under_18": {
+      "no_annual_maximum": true
+    }
+  },
+
+  "excluded_services": [
+    "Cosmetic Surgery",
+    "Vision care (other than routine)",
+    "Infertility treatment",
+    "Bariatric surgery",
+    "Hearing aids",
+    "Orthodontic services",
+    "Weight loss services",
+    "Experimental treatments",
+    "Services not medically necessary",
+    "dependent maternity",
+    "habilitation_services",
+    "occupational_therapy",
+    "genetic_testing",
+    "cosmetic_dental_procedures",
+    "missed_appointment_fees"
+  ],
+
+  "additional_coverage_notes": {
+    "emergency_care_when_traveling": true,
+    "wellness_services": true,
+    "routine_eye_exam_for_children": true,
+    "children_dental_checkup": true,
+    "private_duty_nursing": true,
+    "alternate_treatment_benefit": true,
+    "preauthorization_required_for_specialty_drugs": true
+  }
+}
+]

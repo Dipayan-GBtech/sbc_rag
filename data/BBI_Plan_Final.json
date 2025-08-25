@@ -1,0 +1,1153 @@
+{
+  "Deductibles_and_Out_of_Pocket_Expenses": {
+    "In_Network_Deductible": {
+      "Individual": "$1500",
+      "Family": "$3000",
+      "Plan_Pays_Before_Deductible": "0%, Deductible must be met before plan benefits apply unless otherwise stated",
+      "Patient_Pays_Before_Deductible": "All covered expenses until deductible is met"
+    },
+    "Out_of_Network_Deductible": {
+      "Individual": "$3000",
+      "Family": "$9000",
+      "Plan_Pays_Before_Deductible": "0%, Deductible must be met before plan benefits apply unless otherwise stated",
+      "Patient_Pays_Before_Deductible": "All covered expenses until deductible is met"
+    },
+    "Deductible_Rules": {
+      "Individual_Requirement": "Must be satisfied by one person's expenses",
+      "Family_Requirement": "Can be satisfied by combined eligible expenses from any covered family members",
+      "Combination": "In-network and out-of-network deductibles do not combine",
+      "Carryover_Rule": "Eligible expenses from October, November, and December count toward the next year's deductible"
+    },
+    "Out_of_Pocket_Maximum": {
+      "In_Network": {
+        "Individual": "$7600",
+        "Family": "$13700",
+        "After_Max_Reached": {
+          "Plan_Pays": "100% of covered in-network services",
+          "Patient_Pays": "$0 (excluding premiums)"
+        }
+      },
+      "Out_of_Network": {
+        "Individual": "No out-of-pocket maximum limit. Patient continues to pay 60% coinsurance for covered services and may also be responsible for charges above the plan's allowable amount (balance billing).",
+        "Family": "No out-of-pocket maximum limit. Family continues to pay 60% coinsurance for covered services and all non-covered amounts, with no upper limit or financial protection.",
+        "Patient_Responsibility": "Continues to pay 60% coinsurance and any balance-billed charges indefinitely. There is no financial cap to protect the patient."
+      },
+      "Includes": [
+        "Copayments",
+        "Deductibles",
+        "Coinsurance"
+      ],
+      "Excludes": [
+        "Premiums",
+        "Non-covered charges",
+        "Denied services",
+        "Charges above plan limits",
+        "Ineligible_charges"
+      ],
+      "Cross_Application": "Covered expenses with an in-network provider do not count toward the out-of-network deductible or out-of-pocket limit (and vice versa)"
+    },
+    "Special_Scenarios": {
+      "Lives_More_Than_25_Miles_From_Hospital_or_Outside_Network_Area": {
+        "Plan_Pays": "70% coinsurance (after deductible)",
+        "Patient_Pays": "30% coinsurance (after deductible)"
+      },
+      "No_Pre_Certification_Penalty_OR_Failure_To_Pre-Certify": {
+        "In_Network_Hospital": "$100 penalty",
+        "Out_of_Network_Hospital": "$250 penalty",
+        "Applies_To": "Hospital confinement billing only",
+        "Does_Not_Apply": [
+          "Emergency situations if certified within 48 hours",
+          "Newborn hospital stays starting at birth"
+        ]
+      },
+      "Out_of_Network_Provider_Used_Inside_Network_Facility": {
+        "Plan_May_Treat_As_In_Network": true,
+        "Plan_Pays": "In-network rates (typically 70%)",
+        "Patient_Pays": "In-network coinsurance (typically 30%)"
+      },
+      "Medically_Necessary_Services_Not_Available_In_Network": {
+        "Out_of_Network_Treated_As_In_Network": true,
+        "Plan_Pays": "70% coinsurance (after deductible) As if in-network",
+        "Patient_Pays": "30% coinsurance (after deductible)"
+      }
+    }
+  },
+  "Schedule_of_Benefits": {
+    "Office_Visits": {
+      "In_Network": {
+        "First_2_Visits_Per_Year": {
+          "Copay": "$35",
+          "Includes": [
+            "Lab tests",
+            "X-rays",
+            "Injections performed on the same day"
+          ],
+          "Excludes": [
+            "Office surgery",
+            "MRI",
+            "EKG",
+            "CAT scans",
+            "PET scans",
+            "Chiropractic services",
+            "All wellness services"
+          ],
+          "Plan_Pays": "100% after $35 copay",
+          "Patient_Pays": "$35 per visit"
+        },
+        "Additional_Visits": {
+          "Plan_Pays": "70% after deductible",
+          "Patient_Pays": "30% after deductible"
+        }
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Lab_Xray_Injection_Exception": "If performed on same day as covered $35 in-network visit, Plan pays 100% after copay",
+    "Health_Plan_Clinic": {
+      "In_Network_Only": {
+        "Copay": "$10",
+        "Plan_Pays": "100% after copay",
+        "Patient_Pays": "$10",
+        "Includes": "Lab work ordered by clinic and done at preferred lab"
+      }
+    },
+    "Injections_Administered_in_Physician_Office": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Office_Based_Surgery": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Other_Physician_Services": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Ambulance_Services": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Chiropractic_Services": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible",
+        "Limit": "30 sessions/year",
+        "Max_Payment": "$50 per day"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Limit": "30 sessions/year",
+        "Max_Payment": "$50 per day"
+      }
+    },
+    "Durable_Medical_Equipment": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible",
+        "Note": "Limited to the purchase price of the items"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum.",
+        "Note": "Limited to the purchase price of the items"
+      }
+    },
+    "Enhanced_Benefit_Facilities": {
+      "Plan_Pays": "90%, deductible waived",
+      "Patient_Pays": "10%",
+      "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+    },
+    "Emergency_Room_Visits": {
+      "In_Network": {
+        "Copay_Per_Visit": "$100 per visit Additional copays still apply even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities",
+        "Copay_Waived": "If using Enhanced Benefit Facility"
+      },
+      "Out_of_Network": {
+        "Copay_Per_Visit": "$100 per visit Additional copays still apply even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+          "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Skilled_Nursing_Rehab_Care": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Home_Health_Care": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Hospice_Care": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Anesthesia_Services": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible",
+        "Deductible": "Applies",
+        "Limit": "Limited to the Usual & Customary charges for one anesthesia billing per incident"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Deductible": "Applies",
+        "Limit": "Limited to the Usual & Customary charges for one anesthesia billing per incident",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Hospital_Inpatient_Facility_Charges": {
+      "In_Network": {
+        "Copay": "$300 Additional copays still apply even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Copay_Waived": "If using Enhanced Benefit Facility",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Copay": "$500 Additional copays still apply even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible"
+      }
+    },
+    "Inpatient_Surgery": {
+      "In_Network": {
+        "Copay": "$300 Additional copays still apply even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Copay_Waived": "If using Enhanced Benefit Facility",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Copay": "$500 Additional copays still apply even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible"
+      }
+    },
+    "Hospital_Room_And_Board": {
+      "In_Network": {
+      "Copay": "$300 additional copay per admission even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+          "Semi_Private_Room": {
+          "Rate": "Semi-Private Rate",
+          "Plan_Pays": "70% after deductible",
+          "Patient_Pays": "30% after deductible"
+          },
+          "Private_Room": {
+          "Rate": "Semi-Private Rate",
+          "Plan_Pays": "70% after deductible",
+          "Patient_Pays": "30% after deductible",
+          "Special_Limit": "If hospital does not have semi-private rooms, limit is 80% of actual private room rate"
+          },
+          "ICU_CCU": {
+          "Rate": "Actual Charges",
+          "Plan_Pays": "70% after deductible",
+          "Patient_Pays": "30% after deductible"
+          }
+        },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Copay_Waived": "If using Enhanced Benefit Facility",
+        "Condition": "Services must be performed and billed by an approved Enhanced Benefit Facility. Inpatient and outpatient deductibles waived. Member must contact Nexcaliber at (800) 741-0185 at time of service to confirm facility inclusion."
+          },
+      "Out_of_Network": {
+      "Copay": "$500 additional copay per admission even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+          "Semi_Private_Room": {
+          "Rate": "Semi-Private Rate",
+          "Plan_Pays": "40% after deductible",
+          "Patient_Pays": "60% after deductible"
+          },
+        "Private_Room": {
+        "Rate": "Semi-Private Rate",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Special_Limit": "If hospital does not have semi-private rooms, limit is 80% of actual private room rate"
+          },
+        "ICU_CCU": {
+        "Rate": "Actual Charges",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible"
+          }
+        },
+        "Additional_Rules": [
+        "All inpatient confinements must be pre-certified by the Pre-certification Vendor prior to admission, except in emergency situations as outlined in the plan.",
+        "If a hospital does not contain semi-private rooms, the private room limit is 80% of the hospital’s actual private room rate.",
+        "If a private room or isolation room is medically necessary due to contagious disease, the hospital’s Reasonable and Customary charge for such room will be considered a Covered Expense."
+        ]
+      },
+    "Diagnostic_Xrays_And_Lab_Tests": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "LabCard_Quest_Diagnostics": {
+      "In_Network": "Plan pays 100%, deductible waived",
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Medical_Supplies": {
+      "In_Network": {
+        "Note": "Need to add purchase price details",
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Note": "Need to add purchase price details",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Orthotics": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible",
+        "Lifetime_Maximum": "Maximum Lifetime Benefit $500 per person"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Lifetime_Maximum": "Maximum Lifetime Benefit $500 per person",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Outpatient_Surgery_And_Diagnostic": {
+      "In_Network": {
+        "Copay_Per_Incident": "$100 per incident, even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Copay_Waived": "Per Incident $100 copay waived when using Enhanced Benefit Facility listing",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Copay_Per_Incident": "$100 per incident, even after the deductible, coinsurance, and out-of-pocket maximum (OOP) are met, unless otherwise stated in the plan.",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Therapy_Physical_Occupational_Speech": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Routine_Wellness_Care": {
+      "Description": "Includes, but is not limited to, Pap smears, routine mammography, colorectal and prostate tests, hearing tests, vision testing, routine checkups, immunizations, inoculations, related laboratory work, and x-rays. Also includes services rated an 'A' or 'B' by the United States Preventive Services Task Force (USPTF).",
+      "In_Network": "Plan pays 100%, deductible waived",
+      "Out_of_Network": "Plan pays 40% after deductible"
+    },
+    "Enhanced_Well_Woman_Benefits": {
+      "Description": "Includes: prenatal visits (routine preventive visits); screening for gestational diabetes; human papillomavirus (HPV) DNA testing from age 30 every 3 years; counseling for sexually transmitted infections (eligible providers only); counseling and screening for human immunodeficiency virus (HIV) (eligible providers only); screening and counseling for interpersonal and domestic violence (eligible providers only); breastfeeding support, supplies and counseling; generic formulary contraceptives, certain brand formulary contraceptives, and all Food and Drug Administration (FDA) approved contraceptive methods; sterilization procedures; and patient education and counseling for all women with reproductive capacity, with a physician-issued prescription.",
+      "In_Network": "Plan pays 100%, deductible waived",
+      "Out_of_Network": "Plan pays 40% after deductible"
+    },
+    "Preadmission_Testing": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Transplant_Transportation_Lodging": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible",
+        "Lifetime_Maximum": "$10,000 per person"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible",
+        "Lifetime_Maximum": "$10,000 per person"
+      }
+    },
+    "Maternity_Care": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Copay_Waived": "If using Enhanced Benefit Facility",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "All_Other_Covered_Services": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Enhanced_Benefit_Facilities": {
+        "Plan_Pays": "90%, deductible waived",
+        "Patient_Pays": "10%",
+        "Copay_Waived": "If using Enhanced Benefit Facility",
+        "Condition": "Only applies to services billed by approved Enhanced Benefit Facilities"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    }
+  },
+  "Mental_Health_and_Substance_Abuse": {
+    "Outpatient_Services": {
+      "In_Network": {
+        "First_2_Visits_Per_Calendar_Year": {
+          "Copay_Per_Visit": "$35",
+          "Plan_Pays": "100% of remaining cost after copay",
+          "Patient_Pays": "$35 per visit"
+        },
+        "After_2_Visits": {
+          "Plan_Pays": "70% after deductible",
+          "Patient_Pays": "30% after deductible"
+        }
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Intensive_Outpatient_Program_IOP": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Partial_Hospitalization_Program_PHP": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Inpatient_Hospitalization": {
+      "In_Network": {
+        "Admission_Copay": "$300",
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible"
+      },
+      "Out_of_Network": {
+        "Admission_Copay": "$500",
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Residential_Treatment_Facilities": {
+      "In_Network": {
+        "Plan_Pays": "70% after deductible",
+        "Patient_Pays": "30% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      },
+      "Out_of_Network": {
+        "Plan_Pays": "40% after deductible",
+        "Patient_Pays": "60% after deductible",
+        "Balance_Billing": "Patient is responsible for all charges above the plan's allowed amount (UCR/Usual, Customary, and Reasonable). There is no cap on these costs, and they do not count toward the out-of-pocket maximum."
+      }
+    },
+    "Precertification_Requirement": {
+      "Required_For_All_Services": true,
+      "Failure_To_PreCertify": "May result in penalties or denial"
+    }
+  },
+  "Prescription_Drug_Benefit": {
+    "Network": "Brookshire Brothers Pharmacy Network only",
+    "Supply_Limit": "Each 30-day supply requires one co-payment",
+    "Cost_Sharing": {
+      "Brand_No_Generic_Available": "50% copayment, $10 minimum",
+      "Brand_Generic_Available": "Copayment equals retail price minus $10",
+      "Generic": "$10 copayment"
+    },
+    "Coverage_Conditions": {
+      "Medical_Necessity": true
+    },
+    "Exclusions": [
+      "Over-the-counter drugs except insulin and insulin syringes",
+      "Contraceptive drugs or devices, even if ordered for non-contraceptive purposes (exclusion does not apply to oral contraceptives or Depo Provera)",
+      "Fertility drugs",
+      "Fluoride products",
+      "Rogaine",
+      "Smoking cessation programs except Chantix (one treatment per lifetime)",
+      "Appetite suppressants, dietary supplements, and vitamin supplements (exclusion does not apply to prenatal vitamins requiring a prescription and prescription vitamin supplements containing fluoride)",
+      "Anabolic steroids",
+      "Impotence treatments including, but not limited to, Muse, Edex, Yohimbine, Viagra",
+      "Syringes and needles (all except insulin)",
+      "Prescriptions related to workers’ compensation",
+      "Drugs which are not medically necessary, including drugs given in connection with non-medically necessary services or supplies",
+      "Cosmetic drugs, even if ordered for non-cosmetic purposes",
+      "Any refill that exceeds the number ordered by the physician",
+      "Prescriptions available for a low cost or for free under Patient Assistance Programs or similar programs without coverage"
+    ]
+  },
+  "Eligibility": {
+    "Employee_Eligibility": {
+      "Requirement": "Must meet the plan's eligibility criteria",
+      "Employment_Status": "Full-time",
+      "Minimum_Hours": "As defined by employer",
+      "Ineligible_Groups": [
+        "Part-time",
+        "Temporary",
+        "Seasonal",
+        "Contract workers (unless specifically stated by plan sponsor)"
+      ],
+      "Coverage_Start": "After completion of any employer-specified waiting period"
+    },
+    "Dependent_Eligibility": {
+      "Eligible_Dependents": [
+        "Legal spouse",
+        "Children up to age 26 (biological, adopted, stepchildren, legal guardianship)",
+        "Disabled dependents over age 26 if continuously disabled and dependent on the employee"
+      ],
+      "Termination_Conditions": [
+        "Dependent no longer meets eligibility criteria",
+        "Coverage ends when employee's coverage ends",
+        "Spouse coverage ends at divorce or legal separation",
+        "Child coverage ends at age 26 unless disabled"
+      ],
+      "Proof_Requirement": [
+        "Birth certificate",
+        "Marriage certificate",
+        "Other documentation as required"
+      ]
+    },
+    "Enrollment": {
+      "When_To_Enroll": [
+        "Initial eligibility period",
+        "Special enrollment periods"
+      ],
+      "Special_Enrollment_Events": [
+        "Marriage",
+        "Birth",
+        "Adoption",
+        "Loss of other coverage"
+      ],
+      "Late_Enrollment": "May need to wait for annual open enrollment or a special qualifying event"
+    },
+    "COBRA_Eligibility_Note": "COBRA continuation may apply for terminated employees and dependents under certain conditions"
+  },
+  "Termination_of_Coverage": {
+    "Employee_Termination": {
+      "Condition": "Coverage ends when employee no longer meets plan eligibility",
+      "Effective_Date": "Last day of the month in which employment ends (unless otherwise stated)"
+    },
+    "Dependent_Termination": {
+      "Earliest_Date_Rules": [
+        "Dependent no longer meets eligibility requirements",
+        "Employee's coverage terminates",
+        "Date of divorce/legal separation (for spouse)",
+        "Child no longer qualifies (e.g., turns 26 unless disabled)"
+      ]
+    },
+    "Immediate_Termination_Conditions": [
+      "Fraud or misrepresentation by employee or dependent"
+    ],
+    "Voluntary_Termination": {
+      "Reason": "Voluntary drop or failure to pay contributions",
+      "Coverage_Ends": "At the end of the paid-through period"
+    },
+    "Reinstatement_Note": "Termination is not a qualifying event to reinstate coverage outside of open/special enrollment",
+    "COBRA_Continuation_Note": "May be available as per federal law"
+  },
+  "Continuation_of_Coverage_COBRA": {
+    "Overview": {
+      "Description": "Allows eligible employees and dependents to continue health coverage after it would normally terminate",
+      "Applicability": "Employer must have 20 or more employees and be subject to federal continuation laws"
+    },
+    "Qualifying_Events": [
+      "Termination of employment (except for gross misconduct)",
+      "Reduction in work hours below the eligibility threshold",
+      "Divorce or legal separation",
+      "Death of the covered employee",
+      "Dependent child no longer meeting eligibility requirements"
+    ],
+    "Notification_Requirements": {
+      "Participant_Must_Notify": [
+        "Divorce",
+        "Loss of dependent status"
+      ],
+      "Notification_Deadline": "Within 60 days of qualifying event"
+    },
+    "Plan_Administrator_Responsibilities": {
+      "Provide_Election_Notice": "Within the required timelines"
+    },
+    "Election_Rules": {
+      "Election_Window": "60 days from date of qualifying event or receipt of COBRA notice"
+    },
+    "Coverage_Provisions": {
+      "Same_As_Active_Plan": "COBRA coverage is identical to active plan coverage prior to the qualifying event",
+      "Cost": "COBRA beneficiaries pay full cost of coverage plus 2% administrative fee"
+    },
+    "Coverage_Duration": {
+      "Standard_Duration": "Up to 18 months",
+      "Extended_Duration": {
+        "Disability": "Up to 29 months",
+        "Other_Events": "Up to 36 months (e.g., divorce, death, loss of dependent status)"
+      }
+    },
+    "Early_Termination_Conditions": [
+      "Premiums not paid on time",
+      "Employer stops offering group health coverage",
+      "Beneficiary becomes covered under another group plan",
+      "Beneficiary becomes eligible for Medicare"
+    ]
+  },
+  "Comprehensive_Medical_Expense_Benefit": {
+    "Coverage": {
+      "What_Is_Covered": [
+        "Medically necessary services and supplies",
+        "Not excluded under the plan",
+        "Properly documented and submitted"
+      ],
+      "Subject_To": [
+        "Applicable deductibles",
+        "Copays",
+        "Coinsurance",
+        "Maximum limits",
+        "Pre-certification requirements"
+      ]
+    },
+    "Covered_Services": [
+      "Physician office visits",
+      "Hospital room and board",
+      "Intensive care",
+      "Inpatient and outpatient surgery",
+      "Anesthesia",
+      "Diagnostic testing (lab, x-ray, imaging)",
+      "Physical therapy",
+      "Occupational therapy",
+      "Speech therapy",
+      "Durable medical equipment",
+      "Home health care",
+      "Hospice care",
+      "Skilled nursing facility care",
+      "Emergency room treatment",
+      "Ambulance services",
+      "Maternity care",
+      "Mental health and substance use treatment",
+      "Organ and tissue transplants (subject to guidelines)",
+      "Preventive care (when mandated or covered)"
+    ],
+    "Covered_Preventive_Services": [
+      "Immunizations",
+      "Screening mammograms",
+      "Pap tests",
+      "Colonoscopies",
+      "Well-woman care",
+      "Other federally mandated preventive services"
+    ],
+    "Precertification_Required_For": [
+      "Inpatient hospitalization",
+      "Outpatient surgery",
+      "Advanced imaging (MRI, CT, PET)",
+      "Home health care",
+      "Hospice care",
+      "Skilled nursing facility care",
+      "Transplants",
+      "Certain durable medical equipment"
+    ],
+    "Failure_To_Precertify": "May result in benefit reduction or denial",
+    "Provider_Requirements": {
+      "License": "Services must be provided by a licensed provider",
+      "Scope_Of_Practice": "Acting within scope of license",
+      "Medically_Recognized": "Providing services customarily recognized as medical treatment"
+    },
+    "Payment_Basis": {
+      "In_Network": "Allowed amount per negotiated rates",
+      "Out_of_Network": "Reasonable and customary charges (subject to balance billing)"
+    },
+    "Exclusions_And_Limitations": {
+      "Not_Covered_If": [
+        "Duplicate charges",
+        "Unbundled services",
+        "Unrelated to diagnosis",
+        "Not consistent with standards of care",
+        "Not billed appropriately",
+        "Missed appointments",
+        "Late fees"
+      ]
+    },
+    "Claims_Submission": {
+      "Deadline": "Usually within 12 months",
+      "Required_Info": [
+        "Medical records",
+        "Itemized bills",
+        "CPT/HCPCS/ICD-10 codes",
+        "Date and place of service",
+        "Provider information"
+      ]
+    },
+    "Coordination_Of_Benefits": {
+      "With_Other_Plans": "May reduce payment based on other coverage (group or government)",
+      "Primary_vs_Secondary": "This plan may coordinate as secondary"
+    }
+  },
+  "Continuity_of_Care": {
+    "Claims_Submission": {
+      "Requirements": [
+        "Must be submitted properly",
+        "Must meet plan's filing deadline",
+        "Must include all required information: itemized bills, provider info, procedure and diagnosis codes"
+      ],
+      "Plan_May_Request": [
+        "Additional information to process the claim"
+      ]
+    },
+    "Claim_Denials": {
+      "Notice_Provided": {
+        "Includes": [
+          "Reason for denial",
+          "Reference to plan provisions",
+          "Description of additional info required (if any)",
+          "Explanation of appeal rights"
+        ]
+      }
+    },
+    "Appeal_Rights": {
+      "First_Level_Appeal": {
+        "Submission": "Must be in writing",
+        "Deadline": "Within timeframe specified by the plan (typically 180 days)",
+        "Should_Include": [
+          "Reason why the claim should be paid",
+          "Supporting documents"
+        ],
+        "Plan_Response_Time": "Typically 30 days"
+      },
+      "Second_Level_Appeal": {
+        "Availability": "May be available if first level appeal is denied"
+      },
+      "Final_Decision_Basis": [
+        "Plan terms",
+        "Submitted evidence",
+        "Applicable law"
+      ]
+    },
+    "Benefit_Conditions": {
+      "Payable_Only_If": [
+        "Plan administrator determines all conditions for payment are met"
+      ],
+      "Discretionary_Authority": "Plan administrator has authority to interpret plan terms and determine eligibility for benefits"
+    }
+  },
+  "Medical_General_Exclusions_and_Limitations_Detailed": [
+    {
+      "ID": 1,
+      "Title": "Services before coverage starts",
+      "Description": "Services rendered or expenses incurred before the effective date of coverage are not covered. An expense is considered incurred on the date the service or supply is rendered or furnished.",
+      "Scenario_Logic": "If a participant gets an X-ray on January 1 but their coverage starts on January 10, the claim will be denied because the expense was incurred before coverage began. The billing date does not affect this determination."
+    },
+    {
+      "ID": 2,
+      "Title": "Dental services excluded",
+      "Description": "Dental care or treatment is not covered except as specifically provided in this Plan. This includes but is not limited to routine examinations, cleaning, x-rays, fillings, crowns, bridges, orthodontics, and services for periodontal disease, except as required for treatment of accidental injury to sound natural teeth.",
+      "Scenario_Logic": "Routine dental cleanings, crowns, or orthodontics are denied unless explicitly covered by the plan. Emergency dental treatment for accidental injury to sound natural teeth may be covered if documented as medically necessary."
+    },
+    {
+      "ID": 3,
+      "Title": "Cosmetic procedures",
+      "Description": "Cosmetic surgery or treatment is not covered unless necessary to correct a condition resulting from an accidental injury, to improve the function of a malformed part of the body, or as specifically covered in this Plan. Complications from non-covered cosmetic surgery or treatment are also not covered.",
+      "Scenario_Logic": "Rhinoplasty solely for appearance is denied. Rhinoplasty to correct breathing difficulty from a broken nose after an accident may be covered if documented. Follow-up treatment for complications from a non-covered cosmetic surgery is also excluded."
+    },
+    {
+      "ID": 4,
+      "Title": "Vision and hearing services excluded",
+      "Description": "Vision care services, including but not limited to eye examinations, eyeglasses, contact lenses (including those required after cataract surgery), and refractive surgery procedures such as radial keratotomy, LASIK, and PRK, are not covered. Hearing aids and examinations for prescribing or fitting hearing aids are not covered, except when required due to accidental injury to the eye or ear or as a result of interocular surgery.",
+      "Scenario_Logic": "Routine eye exam for glasses = denied. LASIK or PRK surgery = denied. Contact lenses after cataract surgery = denied unless specifically covered. Hearing aid fitting after age-related loss = denied. Hearing exam after traumatic ear injury or interocular surgery = may be covered if medically necessary."
+    },
+    {
+      "ID": 5,
+      "Title": "Work-related injuries",
+      "Description": "Services or supplies for an illness or injury which arises out of or in the course of any employment for compensation, profit, or gain are excluded. This applies whether or not benefits are available under any workers’ compensation or similar law. This exclusion does not apply to participants who are not covered under any workers’ compensation law.",
+      "Scenario_Logic": "A back injury sustained while working for pay is excluded, even if the employee is not receiving workers’ compensation benefits. If the participant is not covered under any workers’ compensation law, the service may be covered if it meets other plan requirements."
+    },
+    {
+      "ID": 6,
+      "Title": "Government facilities",
+      "Description": "Services furnished by a hospital or facility owned or operated by the United States Government or by a state or local government are excluded, except as required by federal or state law. This includes care provided in Veterans Administration facilities or military hospitals, except for care for non-service-connected conditions as required by law.",
+      "Scenario_Logic": "Routine treatment at a VA hospital for a veteran's service-connected disability is excluded. Treatment at a VA facility for a non-service-connected condition may be covered if required by law."
+    },
+    {
+      "ID": 7,
+      "Title": "War/military exclusion",
+      "Description": "Services or supplies for an illness or injury caused by or related to war, declared or undeclared, or any act of war, participation in a riot, insurrection, or rebellion are excluded.",
+      "Scenario_Logic": "Treatment for an injury sustained while participating in a riot is excluded. Medical care for injuries sustained as a result of war or any act of war, whether declared or undeclared, is excluded."
+    },
+    {
+      "ID": 8,
+      "Title": "No legal payment obligation",
+      "Description": "Services for which a participant has no legal obligation to pay are excluded. This includes care provided by a family member or received at no charge.",
+      "Scenario_Logic": "If services are provided free of charge or by a family member, the claim will be denied because there is no legal obligation for the participant to pay."
+    },
+    {
+      "ID": 9,
+      "Title": "Exceeds reasonable/customary limits",
+      "Description": "Charges in excess of the Plan’s maximum allowable amount are excluded and are the responsibility of the participant.",
+      "Scenario_Logic": "If a provider bills $500 but the Plan’s maximum allowable amount is $300, the Plan will pay based on $300 and the participant is responsible for the remaining $200."
+    },
+    {
+      "ID": 10,
+      "Title": "Self-harm or suicide",
+      "Description": "Services for injuries sustained or illnesses contracted as a result of an attempt to commit suicide or an intentionally self-inflicted injury are excluded, whether the individual is sane or insane.",
+      "Scenario_Logic": "If a participant is hospitalized for injuries from an intentional overdose, the claim will be denied under this exclusion."
+    },
+    {
+      "ID": 11,
+      "Title": "Genetic testing",
+      "Description": "Genetic testing is excluded except as required under federal law for preventive services.",
+      "Scenario_Logic": "Genetic tests, including BRCA testing, are payable only when performed as a preventive service required under federal law and when the patient meets applicable clinical guidelines (e.g., USPSTF family history criteria). If BRCA testing is performed for non-preventive purposes, such as elective screening or post-diagnosis genetic analysis, it is excluded."
+    },
+    {
+      "ID": 12,
+      "Title": "Sterilization reversal",
+      "Description": "Reversal of sterilization procedures, such as vasectomy or tubal ligation, is excluded.",
+      "Scenario_Logic": "A tubal ligation reversal or vasectomy reversal is excluded. Initial sterilization procedures, such as a vasectomy or tubal ligation, may be covered under the Plan's preventive services benefits as required by federal law."
+    },
+    {
+      "ID": 13,
+      "Title": "Non-prescribed contraceptives",
+      "Description": "Contraceptive devices or medications thatare not prescribed by a physician are excluded.",
+      "Scenario_Logic": "Over-the-counter Plan B purchased without a prescription is excluded. An intrauterine device (IUD) or other contraceptive supplied with a physician’s prescription may be covered under the Plan's preventive services benefits."
+    },
+    {
+      "ID": 14,
+      "Title": "Infertility treatment",
+      "Description": "Services, supplies, or treatment for infertility are excluded. This includes but is not limited to artificial insemination, in vitro fertilization (IVF), embryo transfer, gamete intrafallopian transfer (GIFT), zygote intrafallopian transfer (ZIFT), and related medications.",
+      "Scenario_Logic": "Ovulation induction using Clomid is excluded. Embryo freezing or transfer, IVF, GIFT, and ZIFT are all excluded under this rule."
+    },
+    {
+      "ID": 15,
+      "Title": "Elective abortions",
+      "Description": "Abortions are excluded except when the life of the mother would be endangered if the fetus were carried to term, or in the case of medical complications resulting from abortion.",
+      "Scenario_Logic": "A planned elective abortion with no medical risk to the mother is excluded. An abortion performed due to life-threatening pregnancy complications, or treatment for complications from an abortion, is covered."
+    },
+    {
+      "ID": 16,
+      "Title": "Dependent child's pregnancy",
+      "Description": "Pregnancy of a dependent child and charges for the newborn child of a dependent child are excluded.",
+      "Scenario_Logic": "If a dependent daughter delivers a baby, both her pregnancy costs and the newborn’s charges are excluded."
+    },
+    {
+      "ID": 17,
+      "Title": "Hair treatments",
+      "Description": "Hair transplants, hairpieces, wigs, or hair growth products are excluded unless specifically covered under this Plan.",
+      "Scenario_Logic": "Hair loss treatment for male pattern baldness is excluded. A wig after cancer treatment is excluded unless the Plan specifically lists it as a covered benefit."
+    },
+    {
+      "ID": 18,
+      "Title": "Nutritional counseling or supplements",
+      "Description": "Health club memberships, diet programs, or weight reduction clinics are excluded, even if recommended by a physician.",
+      "Scenario_Logic": "A gym membership or enrollment in Weight Watchers is excluded, even if prescribed or recommended by a physician."
+    },
+    {
+      "ID": 19,
+      "Title": "Health club or diet clinic membership",
+      "Description": "Membership costs are excluded regardless of physician recommendation.",
+      "Scenario_Logic": "Weight Watchers membership = not covered."
+    },
+    {
+      "ID": 20,
+      "Title": "Weight loss treatment",
+      "Description": "Weight loss or weight control services or treatment of obesity are excluded unless required by applicable law.",
+      "Scenario_Logic": "Weight loss surgery, such as gastric bypass, is excluded unless the Plan is required to cover it under applicable federal or state law."
+    },
+    {
+      "ID": 21,
+      "Title": "Hypnotherapy",
+      "Description": "Hypnotherapy is excluded, except when used for pain management in lieu of anesthesia or as part of a documented mental health treatment plan.",
+      "Scenario_Logic": "Hypnosis for smoking cessation is excluded. Hypnosis provided for pain management instead of anesthesia, or as part of a documented mental health treatment plan, is covered."
+    },
+    {
+      "ID": 22,
+      "Title": "Acupuncture and oriental treatment",
+      "Description": "Acupuncture and other forms of oriental treatment are excluded.",
+      "Scenario_Logic": "Any service involving acupuncture or other forms of oriental treatment is excluded from coverage."
+    },
+    {
+      "ID": 23,
+      "Title": "Biofeedback",
+      "Description": "Biofeedback is excluded.",
+      "Scenario_Logic": "Biofeedback therapy for anxiety is excluded. Biofeedback therapy for migraines is also excluded."
+    },
+    {
+      "ID": 24,
+      "Title": "Sexual dysfunction",
+      "Description": "Treatment, services, or supplies for sexual dysfunction, impotence, or sexual inadequacy are excluded.",
+      "Scenario_Logic": "Prescription medications for erectile dysfunction, such as Viagra, are excluded. Surgical or therapeutic treatments for sexual inadequacy are also excluded."
+    },
+    {
+      "ID": 25,
+      "Title": "Penile implants",
+      "Description": "Penile implants are excluded, with no exceptions listed in the Plan.",
+      "Scenario_Logic": "A penile implant procedure for erectile dysfunction following cancer treatment is excluded."
+    },
+    {
+      "ID": 26,
+      "Title": "Gender reassignment",
+      "Description": "Sex transformation or gender reassignment surgery and related services are excluded.",
+      "Scenario_Logic": "A claim for gender reassignment surgery, such as chest reconstruction or genital surgery, is excluded along with any related services."
+    },
+    {
+      "ID": 27,
+      "Title": "Custodial care",
+      "Description": "Custodial care is excluded. Custodial care means care primarily for the purpose of meeting personal needs and which can be provided by persons without professional skills or training. Such care is excluded whether provided in a home, hospital, or other facility.",
+      "Scenario_Logic": "A long-term care facility stay that provides only help with daily activities and no skilled medical treatment is excluded, even if provided in a hospital setting."
+    },
+    {
+      "ID": 28,
+      "Title": "Educational confinement",
+      "Description": "Confinement primarily for educational, rest, or custodial purposes is excluded.",
+      "Scenario_Logic": "A stay at a boarding school or rest home is excluded if the primary purpose is educational or rest and not active medical treatment."
+    },
+    {
+      "ID": 29,
+      "Title": "Felony or illegal act",
+      "Description": "Charges for services or supplies for an injury or illness incurred as a result of commission of a felony, participation in a riot, or engaging in an illegal act are excluded.",
+      "Scenario_Logic": "An injury sustained while committing a felony or participating in a riot is excluded. An illness or injury caused while engaging in an illegal act is also excluded."
+    },
+    {
+      "ID": 30,
+      "Title": "Unrendered services",
+      "Description": "Charges for services not rendered are excluded.",
+      "Scenario_Logic": "If a claim is submitted for a procedure that was scheduled but canceled and never performed, it is excluded."
+    },
+    {
+      "ID": 31,
+      "Title": "Experimental/investigational treatments",
+      "Description": "Experimental or investigational services, supplies, care, or treatment are excluded. Experimental or investigational means services that are not recognized as standard medical care for the condition, are not widely accepted within the U.S. medical community, or require approval by a governmental agency such as the FDA and such approval has not been granted at the time the service is provided.",
+      "Scenario_Logic": "Stem cell therapy for a condition where it is not recognized as standard medical care is excluded. A new drug without FDA approval at the time of treatment is also excluded."
+    },
+    {
+      "ID": 32,
+      "Title": "Non-medical counseling",
+      "Description": "Vocational counseling, educational counseling, or other non-medical counseling is excluded, unless determined to be medically necessary and specifically covered under this Plan.",
+      "Scenario_Logic": "Career counseling for job placement is excluded. Counseling that is determined to be medically necessary and is specifically listed as covered under the Plan may be payable."
+    },
+    {
+      "ID": 33,
+      "Title": "Late claim submission",
+      "Description": "Claims must be submitted within twelve (12) months after the date the services were rendered. Claims submitted after this time will be denied.",
+      "Scenario_Logic": "If services were rendered in January 2023 and the claim is submitted in March 2025, it will be denied for late submission."
+    },
+    {
+      "ID": 34,
+      "Title": "Clergy services",
+      "Description": "Services of a clergy are excluded unless a specific charge is made.",
+      "Scenario_Logic": "Pastoral counseling provided for free is excluded. If a clergy member bills for counseling services, coverage depends on whether the service itself is a covered benefit under the Plan."
+    },
+    {
+      "ID": 35,
+      "Title": "Travel or lodging costs",
+      "Description": "Expenses for travel or accommodations or other non-medical expenses, whether or not recommended by a physician or necessary to obtain medical care, are excluded unless specifically covered under this Plan.",
+      "Scenario_Logic": "Non-medical travel or lodging is generally excluded. Exception: transplant-related transportation and lodging, up to the $10,000 lifetime maximum, is covered for both in-network and out-of-network services if deductible and coinsurance rules are met."
+    },
+    {
+      "ID": 36,
+      "Title": "Unlisted services",
+      "Description": "Services not specifically listed as covered expenses are excluded.",
+      "Scenario_Logic": "A new medical procedure not named in the Plan's covered expenses will be excluded."
+    },
+    {
+      "ID": 37,
+      "Title": "Athletic device exclusions",
+      "Description": "Orthopedic shoes, knee braces, or other devices used solely for athletic purposes are excluded.",
+      "Scenario_Logic": "A knee brace purchased for football is excluded. Orthopedic shoes for sports use only are excluded."
+    },
+    {
+      "ID": 38,
+      "Title": "Foot care exclusions",
+      "Description": "Routine foot care, including the treatment of corns, calluses, toenails, bunions, fallen arches, flat feet, or chronic foot strain, is excluded except when required for treatment of metabolic or peripheral vascular disease or as a result of injury or surgery.",
+      "Scenario_Logic": "Removal of a toenail due to fungal infection is excluded. Foot treatment for complications of diabetes (a metabolic disease) or surgery after a foot injury may be covered."
+    },
+    {
+      "ID": 39,
+      "Title": "Chelation therapy",
+      "Description": "Chelation therapy is excluded except for treatment of heavy metal poisoning.",
+      "Scenario_Logic": "Chelation therapy for conditions such as autism is excluded. Chelation therapy for heavy metal poisoning, for example lead poisoning, is covered under this exception."
+    },
+    {
+      "ID": 40,
+      "Title": "Environmental medicine",
+      "Description": "Environmental medicine is excluded.",
+      "Scenario_Logic": "Treatment for mold detoxification is excluded as an example of environmental medicine."
+    },
+    {
+      "ID": 41,
+      "Title": "Holistic or homeopathic medicine",
+      "Description": "Holistic or homeopathic medicine is excluded.",
+      "Scenario_Logic": "Treatments such as Ayurveda or Chinese medicine are excluded as examples of holistic or homeopathic medicine."
+    },
+    {
+      "ID": 42,
+      "Title": "Court-ordered exams",
+      "Description": "Examinations required by a court or for legal purposes are excluded, unless deemed medically necessary.",
+      "Scenario_Logic": "A psychological evaluation ordered by a court is excluded unless it is also deemed medically necessary."
+    },
+    {
+      "ID": 43,
+      "Title": "Comfort or personal items",
+      "Description": "Personal comfort or convenience items are excluded, including but not limited to air conditioners, televisions, telephones, and similar equipment.",
+      "Scenario_Logic": "Rental of a television during a hospital stay is excluded as a personal comfort item."
+    },
+    {
+      "ID": 44,
+      "Title": "Standby physicians",
+      "Description": "Standby physician charges are excluded unless medically necessary.",
+      "Scenario_Logic": "A surgeon on standby for a procedure but not medically necessary is excluded."
+    },
+    {
+      "ID": 45,
+      "Title": "Administrative charges",
+      "Description": "Administrative charges are excluded, including but not limited to charges for missed appointments, completion of forms, or telephone consultations.",
+      "Scenario_Logic": "A fee for a missed appointment is excluded. A charge for completing insurance forms or for a telephone consultation is also excluded."
+    },
+    {
+      "ID": 46,
+      "Title": "Smoking cessation",
+      "Description": "Smoking cessation programs are excluded, except for coverage of the prescription drug Chantix.",
+      "Scenario_Logic": "Enrollment in a smoking cessation program is excluded. A prescription for Chantix is covered."
+    },
+    {
+      "ID": 47,
+      "Title": "Treatment of temporomandibular joint (TMJ) disorders",
+      "Description": "Treatment of temporomandibular joint (TMJ) disorders is excluded unless specifically listed as a covered benefit under this Plan.",
+      "Scenario_Logic": "A bite guard for TMJ is excluded unless the Plan specifically lists TMJ treatment as a covered benefit."
+    }
+  ]
+}
